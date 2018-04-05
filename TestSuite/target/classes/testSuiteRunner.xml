@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Assignment" parallel="tests">
+
+    <parameter name="os" value="mac"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="http://flamenipper.33across.com/?__rtcreativeid=138224697000"/>
+    <test name = "Test33Across">
+        <classes>
+            <class name="TestAcres.TC1"/>
+        </classes>
+    </test>
+</suite>

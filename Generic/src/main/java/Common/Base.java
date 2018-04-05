@@ -1,6 +1,7 @@
 package Common;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -63,6 +64,10 @@ public WebDriver driver = null;
 
     public void navigateTo(String url){
         driver.navigate().to(url);
+    }
+
+    public void clickByXpath(String locator){
+        driver.findElement(By.xpath(locator)).click();
     }
 
 

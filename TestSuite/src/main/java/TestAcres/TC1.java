@@ -2,8 +2,6 @@ package TestAcres;
 
 
 import Common.Base;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import javax.swing.plaf.basic.BasicEditorPaneUI;
@@ -15,6 +13,7 @@ public class TC1 extends Base{
     @Test
     public void Test33Across() {
         navigateTo(URL);
+        clickByXpath("//div[@class='tynt-close-btn']");
 
     }
 
